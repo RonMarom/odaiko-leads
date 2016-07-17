@@ -1,0 +1,44 @@
+
+<table border="0" width="100%">
+	<tr>
+		<td align="center">
+			<%= simple_form_for(Person.new, html: { class: "form-horizontal my-form", multipart: true},:remote=>true) do |f| %>
+    			<div class="form-inputs">
+      				<table border="0">
+          				<tr>
+            				<td valign="top">
+            					<div class="fancy-text">
+                					Add a twitter account to follow:
+                				</div>
+            				</td>
+            				<td colspan="2">
+               					<%= f.text_field :screen_name, label: false, id:"screen-name-text-field", class: "wide-text-field" %>
+            				</td>
+            				<td>
+            					<div class="form-actions">
+    								<%= f.button :submit, "Submit", :remote=>true, class: "form-button" %>
+  								</div>
+  							</td>
+          				</tr>
+      				</table>
+    			</div>
+  
+			<% end %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<hr>
+			<div class="fancy-text">
+            	Currently followed users:
+            </div>
+            <br>
+            <div id="people-section">
+            	<%= render 'people/people_section' %>
+        	</div>
+		</td>
+	</tr>
+</table>
+
+
+

@@ -1,0 +1,25 @@
+<% Person.all.each do |person| %>
+	<div class="item-box">
+    	<table border="0" width="100%">
+			<tr>
+				<td width='80px'>
+					<% if person.picture_url!=nil %>
+						<img src='<%= person.picture_url %>' class='item-post'></img>
+					<% end %>
+				</td>
+				<td class="general-cell">
+					<p class="title">
+						<strong>										
+							<%= person.name %> (<%= person.screen_name %>)
+						</strong>
+					</p>
+					<p class="description">
+						<%= person.description %>
+					</p>
+				</td>
+				</tr>
+		</table>
+		<hr class="compact-hr">
+	</div>
+   	<br>
+<% end %>

@@ -1,0 +1,121 @@
+.compact-hr {
+    margin-bottom:0px;
+    margin-top:0px;
+}  
+
+.description {
+    margin: 10px 0 5px;
+    word-wrap:break-word;
+}
+
+.fancy-text {
+    font-family: 'Gruppo', Helvetica, serif;
+    font-size: 24px;
+    display: inline;
+    font-weight:bold;
+}
+
+.form-button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 1px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gruppo', Helvetica, serif;
+    border-radius: 4px;
+}
+
+.header-font {
+    font-family: 'Gruppo', Helvetica, serif;
+    font-size: 48px;
+    display: inline;
+    font-weight:bold;
+}
+
+.header-font-small {
+    font-family: 'Gruppo', Helvetica, serif;
+    display: inline;
+    font-weight:bold;
+}
+
+.item-box {
+    background-color:white;
+    margin: 0px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.item-post {
+    width: 80px;
+    height: 80px;
+    align: center;
+}
+
+.all-width {
+    width: 100%;
+    background-color:red;
+    text-align: center;
+}
+
+.mid-width {
+    position: absolute;
+    left: 23%;
+}
+
+
+.social-sign-up-link {
+    width: 250px;
+    height: 38px;
+    display: inline-block;
+    padding: 4px;
+    margin: 4px;
+    a:link, a:visited ,a:hover ,a:active {
+        text-decoration:none;
+        color: white;
+        font-size:24px;
+    }
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+}
+
+.title {
+    margin: 10px 0 5px;
+}
+
+.general-cell {
+    vertical-align: top;
+    padding: 3px 3px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, serif;
+}
+
+.welcome-page {
+    background-color:#FFFFFF;
+    position:fixed;
+    top: 30%;
+    left: 25%;
+    text-align:center;
+    h2 {
+        font-family: 'Gruppo', Helvetica, serif;
+        font-size: 120px;
+    }
+    a {
+        text-decoration:none;
+        background-color: transparent;
+        color: blue;
+        font-size: 15px;
+        text-decoration:underline
+    }
+}
+
+
+
