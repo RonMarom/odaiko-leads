@@ -8,10 +8,7 @@ class PeopleController < ApplicationController
   		screen_name="@"+screen_name
   	end
 
-  	config = {
-  		consumer_key:"G7mn0LPTaEyHPngmmErA",
-  		consumer_secret: "nL3PI9g9gvsREuxDowMP6AsuQjcK3UFGZtjKFccl8O0"
-  	}
+  	config = {consumer_key:"G7mn0LPTaEyHPngmmErA",consumer_secret: "nL3PI9g9gvsREuxDowMP6AsuQjcK3UFGZtjKFccl8O0"}
 
   	client=Twitter::Client.new(config)
 

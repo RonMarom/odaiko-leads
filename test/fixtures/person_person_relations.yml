@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  left: 1
+  right: 1
+  essence: MyString
+
+two:
+  left: 1
+  right: 1
+  essence: MyString
