@@ -1,3 +1,5 @@
+require 'scheduler/event_processor'
+
 module Scheduler
 	class HeartbeatGenerator
 
@@ -77,10 +79,11 @@ module Scheduler
 			receivers=get_heartbeat_receivers
 			receivers.each do |receiver|
 				begin
+					
 					length=GC.stat[:heap_length]
 					mbs=(length*(2<<13)).to_f/(2<<19)
 					Rails.logger.info "Currently using memory: #{mbs}MB"
-					receiver.on_heartbeat(tenant)
+					receiver.on_heartbeat
 				rescue Exception => e
 					puts "rescued #{e}"
 					puts e.backtrace.inspect
@@ -90,6 +93,7 @@ module Scheduler
 		
 		def get_heartbeat_receivers
 			result=Array.new
+			result.push(EventProcessor.new)
 			return result
 		end
 

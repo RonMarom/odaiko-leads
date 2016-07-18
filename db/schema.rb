@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160718022125) do
+ActiveRecord::Schema.define(version: 20160718024805) do
+
+  create_table "app_events", force: true do |t|
+    t.integer  "person_id"
+    t.string   "message"
+    t.text     "stack_trace"
+    t.integer  "event_type"
+    t.datetime "schedule_time"
+    t.integer  "retry_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "state"
+  end
 
   create_table "heartbeats", force: true do |t|
     t.integer  "state"
